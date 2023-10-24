@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 
 public class Movement_script : MonoBehaviour
 {
@@ -15,17 +17,17 @@ public class Movement_script : MonoBehaviour
     private Vector3 _movement;
     private Vector3 _layerSwitch;
     private int layer = 0;
-    // Update is called once per frame
     private void Update()
     {
         float Vertical = Input.GetAxisRaw("Vertical");
         float Horizontal = Input.GetAxisRaw("Horizontal");
         _animator.SetFloat("Horizontal", Horizontal);
-        _animator.SetFloat("Speed", _movement.sqrMagnitude);
+        float HorizontalSpeed = Horizontal * (speed) * Time.fixedDeltaTime;
+        _animator.SetFloat("Speed", MathF.Abs(HorizontalSpeed));
         if (Input.GetKeyDown(KeyCode.W))
         {
             layer = layer + 2;
-            _animator.SetFloat("Layer", 1);
+            _animator.SetTrigger("LayerSwitchBack");
             Vector3 Zpos = transform.position;
             Zpos.z = layer;
             transform.position = Zpos;
@@ -33,7 +35,7 @@ public class Movement_script : MonoBehaviour
         }
         else if(Input.GetKeyDown(KeyCode.S)) {
             layer = layer - 2;
-            _animator.SetFloat("Layer", -1);
+            _animator.SetTrigger("LayerSwitchFront");
             Vector3 Zpos = transform.position;
             Zpos.z = layer;
             transform.position = Zpos;
@@ -43,13 +45,9 @@ public class Movement_script : MonoBehaviour
         tempPosition.z = layer;
         transform.position = tempPosition;
         _movement = new Vector3(Horizontal, 0, layer).normalized;
-
-        //_layerSwitch = this.transform.position + new Vector3(Vertical, Horizontal, layer);
-        //_layerSwitch = transform.position + new Vector3(Horizontal, 0 , layer);
     }
     private void FixedUpdate()
     {
         physicsBody.velocity = _movement * (speed) * Time.fixedDeltaTime;
-        //physicsBody.position = _layerSwitch;
     }
 }
