@@ -5,6 +5,7 @@ using UnityEngine;
 public class HighlightManager : MonoBehaviour
 {
     [SerializeField] private GameObject[] _objToHighlight;
+    [SerializeField] private GameObject[] _objectsToView;
     [SerializeField] private Material _material;
     public GameObject HelpWindowUI;
     private int _materialIndex=0;
@@ -37,6 +38,18 @@ public class HighlightManager : MonoBehaviour
         foreach(GameObject ob in _objToHighlight)
         {
             ob.GetComponent<Renderer>().material = ob.GetComponent<ItemToHL>().BaseMaterial[_materialIndex];
+        }
+        
+        foreach(GameObject ob in _objectsToView)
+        {
+            if (ob.activeSelf == true)
+            {
+                ob.SetActive(false);
+            }
+            else
+            {
+                ob.SetActive(true);
+            }
         }
     }
 }

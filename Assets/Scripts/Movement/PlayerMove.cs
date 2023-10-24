@@ -20,7 +20,7 @@ public class PlayerMove : MonoBehaviour
 
     private void Update()
     {
-        if (_joystick.Horizontal > 0.25 || _joystick.Horizontal < 0.25) // Замена A и D
+        if (_joystick.Horizontal > 0.3 || _joystick.Horizontal < 0.3) // Замена A и D
         {
             float Horizontal = _joystick.Horizontal;
             _animator.SetFloat("Horizontal", Horizontal);
