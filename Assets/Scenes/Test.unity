@@ -5073,6 +5073,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5601212640548111001, guid: a721d77413622aa4b89773cbf98f4288, type: 3}
+      propertyPath: _speed
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 5601212640548111001, guid: a721d77413622aa4b89773cbf98f4288, type: 3}
       propertyPath: _joystick
       value: 
       objectReference: {fileID: 2929252283441855531}
@@ -5084,6 +5088,10 @@ PrefabInstance:
       propertyPath: TileLayer2
       value: 
       objectReference: {fileID: 2071942144}
+    - target: {fileID: 5601212640548111001, guid: a721d77413622aa4b89773cbf98f4288, type: 3}
+      propertyPath: TileLayer3
+      value: 
+      objectReference: {fileID: 718160752}
     - target: {fileID: 8728984430943920178, guid: a721d77413622aa4b89773cbf98f4288, type: 3}
       propertyPath: m_Name
       value: Character
