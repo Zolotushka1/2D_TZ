@@ -1904,7 +1904,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 238.02692, y: -41.049652}
-  m_SizeDelta: {x: 476.0538, y: 82.099304}
+  m_SizeDelta: {x: 476.05383, y: 82.099304}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &566798944
 MonoBehaviour:
@@ -3458,10 +3458,10 @@ RectTransform:
   m_Father: {fileID: 1108754137}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 466.8, y: 221}
-  m_SizeDelta: {x: 46.838, y: 46.8376}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -73.25, y: -73.25}
+  m_SizeDelta: {x: 146.5, y: 146.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1354247137
 MonoBehaviour:
@@ -3663,6 +3663,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1659896005201192937, guid: a4d2a44fbed17474eab95714b48aa1f3, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 519420031}
+    - target: {fileID: 1659896005201192937, guid: a4d2a44fbed17474eab95714b48aa1f3, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1659896005201192937, guid: a4d2a44fbed17474eab95714b48aa1f3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2791767002216000984, guid: a4d2a44fbed17474eab95714b48aa1f3, type: 3}
       propertyPath: m_Name
       value: HighlightedCanvas + Missions
@@ -3750,6 +3762,18 @@ PrefabInstance:
     - target: {fileID: 6028772414561710162, guid: a4d2a44fbed17474eab95714b48aa1f3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668679254184660573, guid: a4d2a44fbed17474eab95714b48aa1f3, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668679254184660573, guid: a4d2a44fbed17474eab95714b48aa1f3, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668679254184660573, guid: a4d2a44fbed17474eab95714b48aa1f3, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
