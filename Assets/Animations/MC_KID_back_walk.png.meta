@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0659276304dcbd7479c4c780e4d7c829
+guid: 408a229ca9ce1d8449d25031933be450
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -119,11 +119,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MC_KID_left_walk_0
+      name: MC_KID_back_walk_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29375822890cdbf4f9ab1a7bd94c146b
-      internalID: 792788172
+      spriteID: 4092260d17d812c4f8964a9c3e46381b
+      internalID: 180443349
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_KID_left_walk_1
+      name: MC_KID_back_walk_1
       rect:
         serializedVersion: 2
         x: 64
@@ -158,8 +171,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67d9ad30c75943e40abad16c1e027bfd
-      internalID: -525694701
+      spriteID: d72fb6d2033616242a25496b1d4ee1eb
+      internalID: 1131111130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_KID_back_walk_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aea0db8ada0144e4598363a83928bc15
+      internalID: -788919667
       vertices: []
       indices: 
       edges: []
@@ -175,8 +209,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      MC_KID_left_walk_0: 792788172
-      MC_KID_left_walk_1: -525694701
+      MC_KID_back_walk_0: 180443349
+      MC_KID_back_walk_1: 1131111130
+      MC_KID_back_walk_2: -788919667
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -6,39 +6,37 @@ public class HighlightManager : MonoBehaviour
 {
     [SerializeField] private GameObject[] _objToHighlight;
     [SerializeField] private Material _material;
+    public GameObject HelpWindowUI;
     private int _materialIndex=0;
     private bool _defaultMaterial=true;
-    public GameObject HelpWindowUI;
+
     private void Start() 
     {
         MaterialSwitch();
     }
-    private void Update() 
-    {
-        if (Input.GetKeyDown(KeyCode.E) )    
-        {
-            _defaultMaterial=!_defaultMaterial;
-            MaterialSwitch();
-        }
-    }
 
+    public void OnBtnClick()
+    {
+        _defaultMaterial=!_defaultMaterial;
+        MaterialSwitch();
+    }
+    
     private void MaterialSwitch()
     {
+        if (_defaultMaterial==true) 
+        {
+            HelpWindowUI.SetActive(false);
+            _materialIndex=0;
+        }
+        else 
+        {
+            HelpWindowUI.SetActive(true);
+            _materialIndex=1;
+        }
         
-        if (_defaultMaterial==true)
-            {
-                HelpWindowUI.SetActive(false);
-                _materialIndex=0;
-            }
-            else 
-            {
-                HelpWindowUI.SetActive(true);
-                _materialIndex=1;
-            }
-            foreach(GameObject ob in _objToHighlight)
-            {
-                ob.GetComponent<Renderer>().material = ob.GetComponent<ItemToHL>().BaseMaterial[_materialIndex];
-            }    
-
+        foreach(GameObject ob in _objToHighlight)
+        {
+            ob.GetComponent<Renderer>().material = ob.GetComponent<ItemToHL>().BaseMaterial[_materialIndex];
+        }
     }
 }
