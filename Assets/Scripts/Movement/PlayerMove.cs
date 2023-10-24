@@ -64,7 +64,7 @@ public class PlayerMove : MonoBehaviour
 
     public void KeyUp() // Замена W
     {
-        _layer = _layer + 2;
+        _layer += 2;
         _animator.SetTrigger("LayerSwitchBack");
         Vector3 Zpos = transform.position;
         Zpos.z = _layer;
@@ -73,7 +73,7 @@ public class PlayerMove : MonoBehaviour
 
     public void KeyDown() // Замена S
     {
-        _layer = _layer - 2;
+        _layer -= 2;
         _animator.SetTrigger("LayerSwitchFront");
         Vector3 Zpos = transform.position;
         Zpos.z = _layer;
